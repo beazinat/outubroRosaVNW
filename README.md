@@ -71,12 +71,12 @@ Abra o arquivo index.html em seu navegador para visualizar a página.
 Este projeto foi desenvolvido como parte do bootcamp da Vai na Web, mas sugestões são sempre bem-vindas! Para contribuir:
 
 1. Faça um fork do projeto.
-2. Crie uma branch para suas alterações: git checkout -b minha-nova-funcionalidade
-3. Faça o commit de suas alterações: git commit -m 'Adicionar nova funcionalidade'
-4. Envie para a branch original: git push origin minha-nova-funcionalidade
-5. Abra um pull request.
+2. Crie uma branch para suas alterações: `git checkout -b minha-nova-funcionalidade`
+3. Faça o commit de suas alterações: `git commit -m "Adicionar nova funcionalidade"`
+5. Envie para a branch original: `git push origin minha-nova-funcionalidade`
+6. Abra um pull request.
 
 ## 📜 Licença
 Este projeto é apenas para fins educacionais e não possui uma licença formal.
 
-Desenvolvido com 💖 por Beazinat Gonçalves durante o Bootcamp da Vai na Web.
+<br><p align="center">Desenvolvido com 💖 por <strong>Beazinat Rodrigues</strong> com instrução de Fernanda Corrêa e João Pedro Belo.</p>
