@@ -79,4 +79,4 @@ Este projeto foi desenvolvido como parte do bootcamp da Vai na Web, mas sugestõ
 ## 📜 Licença
 Este projeto é apenas para fins educacionais e não possui uma licença formal.
 
-<br><p align="center">Desenvolvido com 💖 por <strong>Beazinat Rodrigues</strong> com instrução de Fernanda Corrêa e João Pedro Belo.</p>
+<br><p align="center">Desenvolvido com 💖 por <strong>Beazinat Rodrigues</strong> com instrução de <strong>Fernanda Corrêa</strong> e <strong>João Pedro Belo</strong>.</p>
