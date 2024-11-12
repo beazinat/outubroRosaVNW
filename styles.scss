@@ -1,10 +1,11 @@
 // Variáveis
-$primary-color: #f7b4d9;
+$primary-color: #e88c9e;
 $secondary-color: #ffffff;
 $text-color: #333333;
-$font-family: 'Arial', sans-serif;
-$link-hover-color: adjust-hue($primary-color, -15deg);
-$highlight-color: adjust-hue($primary-color, 15deg);
+$background-color: lighten($primary-color, 40%);
+$font-family: 'Montserrat', sans-serif;
+$link-hover-color: darken($primary-color, 15%);
+$highlight-color: lighten($primary-color, 10%);
 
 // Mixins
 @mixin flex-center {
@@ -23,7 +24,7 @@ body {
     color: $text-color;
     margin: 0;
     padding: 0;
-    background-color: lighten($primary-color, 50%);
+    background-color: $background-color;
 }
 
 header {
@@ -64,54 +65,54 @@ main {
 
     .intro,
     .awareness {
-        text-align: center;
-        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 60px;
+        max-width: 800px;
+        margin: 0 auto  75px;
+        font-size: larger;
+        font-weight: normal;
+        text-align: justify;
+    }
 
-        p {
-            max-width: 800px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
+    .intro-image,
+    .awareness-image {
+        max-width: 40%;
+        height: auto;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+    }
 
-        .intro-image,
-        .awareness-image {
-            max-width: 100%;
+    .intro-image:hover,
+    .awareness-image:hover {
+        transform: scale(1.05);
+    }
+}
+
+.tips {
+    text-align: center;
+    font-size: larger;
+
+    h2 {
+        color: $primary-color;
+        margin-bottom: 20px;
+    }
+
+    .tips-images {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 6%;
+
+        img {
+            max-width: 200px;
             height: auto;
-            margin-top: 20px;
             border-radius: 10px;
             @include transition(transform, 0.3s, ease-in-out);
 
             &:hover {
-                transform: scale(1.05);
-            }
-        }
-    }
-
-    .tips {
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-
-        figure {
-            text-align: center;
-            max-width: 200px;
-            margin: 20px;
-
-            img {
-                width: 100%;
-                height: auto;
-                margin-bottom: 10px;
-                border-radius: 10px;
-                @include transition(transform, 0.3s, ease-in-out);
-
-                &:hover {
-                    transform: scale(1.1);
-                }
-            }
-
-            figcaption {
-                font-size: 16px;
-                font-weight: bold;
+                transform: scale(1.1);
             }
         }
     }
@@ -124,11 +125,19 @@ footer {
     color: $secondary-color;
 
     p {
-        margin: 5px 0;
+        margin: 1%;
+        font-weight: bolder;
+        font-size: smaller;
+
+        &.layout {
+            margin-top: 2%;
+            font-size: smaller;
+            color: $text-color;
+        }
     }
 
     .social-media {
-        margin-top: 20px;
+        margin-top: 35px;
 
         a {
             margin: 0 10px;
@@ -146,6 +155,7 @@ footer {
     }
 
     .ribbon {
+        justify-content: center;
         margin-top: 20px;
         height: 50px;
     }
