@@ -6,7 +6,7 @@ Este projeto é um exercício realizado no Bootcamp de Desenvolvimento Fullstack
 
 Aqui está uma prévia da interface do projeto:
 
-[Prévia do Projeto](assets/preview.png)
+[Prévia do Projeto](./assets/preview.png)
 
 ## 📚 Sobre o Projeto
 
